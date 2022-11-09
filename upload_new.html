@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blank Page - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: #212529;">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-text mx-3"><i class="fa fa-book"></i>&nbsp;&nbsp;<span class="all-head"><span class="capital">CaS</span> <span class="capital">S</span>ystem</span></div>
+                </a>
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i><span>&nbsp;Home</span></a></li>
+                    <div class="sidebar-heading"></div>
+                    <li class="nav-item">
+                        <div><a class="btn btn-link nav-link" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button"><i class="icon ion-ios-book-outline"></i>&nbsp;<span>Assignments</span></a>
+                            <div class="collapse" id="collapse-2">
+                                <div class="bg-white border rounded py-2 collapse-inner"><a class="collapse-item" href="upload_new.html">Upload New</a><a class="collapse-item" href="uploaded.html">View Uploaded</a><a class="collapse-item" href="submitted.html">Submitted</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"></li>
+                    <div class="sidebar-heading"></div>
+                    <li class="nav-item">
+                        <div id="collapsePages-1" class="collapse" aria-labelledby="headingTwo" aria-controls="collapsePages" data-bs-parent="#accordionSidebar">
+                            <div class="bg-white border rounded py-2 collapse-inner">
+                                <h6 class="collapse-header">LOGIN SCREENS:</h6><a class="collapse-item" href="#">Login</a><a class="collapse-item" href="#">Register</a><a class="collapse-item" href="#">Forgot Password</a>
+                                <h6 class="collapse-header">OTHER PAGES:</h6><a class="collapse-item" href="#">404 Page</a><a class="collapse-item" href="#">Blank Page</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="new_class_sttudent.html"><i class="fas fa-users"></i><span>&nbsp;Add Class</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="far fa-user"></i><span>&nbsp;Profile</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="tables.html"><i class="fas fa-user-times"></i><span>&nbsp;Logout</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-1" style="margin-top: 26px;">Upload New Assignment</h3>
+                </div>
+                <div class="container" style="margin-top: 18px;">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3" style="filter: saturate(100%);">
+                            <h6 class="text-primary m-0 fw-bold">New Assignment&nbsp;</h6>
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                <div class="mb-3"><select class="form-select">
+                                        <option value="" selected="">Choose Class</option>
+                                        <option value="">Year 1 IT</option>
+                                        <option value="">Year 2 IT</option>
+                                        <option value="">Year 1 MTV</option>
+                                    </select></div>
+                                <div class="mb-3"><select class="form-select">
+                                        <option value="" selected="">Choose Module</option>
+                                        <option value="">ITFD 601</option>
+                                        <option value="">ITIOT 801</option>
+                                        <option value="">MTVSW 601</option>
+                                    </select></div>
+                                <div class="mb-3"><input class="form-control" type="datetime-local"></div>
+                                <div class="mb-3"><input class="form-control" type="file" name="name" placeholder="Name"></div>
+                                <div class="mb-3"><small class="form-text text-body">PDF Documents Only.</small></div>
+                                <div class="mb-3"><textarea class="form-control form-control-sm" name="message" placeholder="Comment" rows="4"></textarea></div>
+                                <div class="mb-3"><button class="btn btn-primary" type="submit">Upload Assignment</button></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="text-primary m-0 fw-bold">Pending Assignments</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive table mt-2" id="dataTable-2" role="grid" aria-describedby="dataTable_info">
+                                <table class="table my-0" id="dataTable">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Class</th>
+                                            <th>Module</th>
+                                            <th>Assignment</th>
+                                            <th>Deadline</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Year 1 IT</td>
+                                            <td>ITFD 601</td>
+                                            <td><i class="fas fa-file-download"></i></td>
+                                            <td>22/09/2022 08:00 Am</td>
+                                            <td>&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Year 1 IT</td>
+                                            <td>ITFD 601</td>
+                                            <td><i class="fas fa-file-download"></i></td>
+                                            <td>22/09/2022 08:00 Am</td>
+                                            <td>&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Year 1 IT</td>
+                                            <td>ITFD 601</td>
+                                            <td><i class="fas fa-file-download"></i></td>
+                                            <td>22/09/2022 08:00 Am</td>
+                                            <td>&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Year 1 IT</td>
+                                            <td>ITFD 601</td>
+                                            <td><i class="fas fa-file-download"></i></td>
+                                            <td>22/09/2022 08:00 Am</td>
+                                            <td>&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Year 1 IT</td>
+                                            <td>ITFD 601</td>
+                                            <td><i class="fas fa-file-download"></i></td>
+                                            <td>22/09/2022 08:00 Am</td>
+                                            <td>&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Year 1 IT</td>
+                                            <td>ITFD 601</td>
+                                            <td><i class="fas fa-file-download"></i></td>
+                                            <td>22/09/2022 08:00 Am</td>
+                                            <td>&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Year 1 IT</td>
+                                            <td>ITFD 601</td>
+                                            <td><i class="fas fa-file-download"></i></td>
+                                            <td>22/09/2022 08:00 Am</td>
+                                            <td>&nbsp;&nbsp;<i class="fa fa-pencil"></i>&nbsp;&nbsp;<i class="fa fa-trash"></i></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr></tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
